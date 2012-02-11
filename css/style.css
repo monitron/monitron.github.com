@@ -215,7 +215,7 @@ td { vertical-align: top; }
 BODY {
 	font-family: 'Lusitana', serif;
 	font-size: 18px;
-	background: #eee;
+	background: #eee url(/img/subtle_zebra_3d.png);
 }
 
 A {
@@ -231,7 +231,7 @@ P {
 	margin: 0 auto;
 	background: white;
 	padding: 20px 40px;
-	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
 }
 
 #header, #footer {
