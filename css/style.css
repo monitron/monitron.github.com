@@ -212,10 +212,105 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
+BODY {
+	font-family: 'Lusitana', serif;
+	font-size: 18px;
+	background: #eee;
+}
 
+A {
+	text-decoration: none;
+}
 
+P {
+	line-height: 1.5em;
+}
 
+#container {
+	width: 900px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px 40px;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
 
+#header, #footer {
+	position: relative;
+	padding: 15px 20px 15px 20px;
+	margin-left: -50px;
+	margin-right: -50px;
+	background: #eee;
+	font-family: 'Asap', sans-serif;
+	color: #666;
+}
+
+#header {
+	border-bottom: 5px solid #999;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#footer {
+	border-top: 5px solid #999;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#tagline {
+	position: absolute;
+	top: 17px;
+	right: 20px;
+}
+
+#navigation {
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#navigation LI {
+	display: block;
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+}
+
+#navigation A, #navigation A:visited {
+	color: black;
+}
+
+#navigation A:hover {
+	color: #666;
+}
+
+H1 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#suck {
+	font-size: 65px;
+	line-height: 62px;
+}
+
+#minimally {
+	font-size: 30.5px;
+	line-height: 22px;
+}
+
+.mainColumn {
+	width: 579px;
+	float: left;
+	padding-right: 20px;
+}
+
+.sidebar {
+	width: 280px;
+	float: right;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
 
 
 

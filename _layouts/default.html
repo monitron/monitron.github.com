@@ -24,6 +24,7 @@
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Asap:400,700|Lusitana:400,700" rel="stylesheet" type="text/css">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -37,14 +38,22 @@
 <body>
 
   <div id="container">
-    <header>
-
-    </header>
-    <div id="main" role="main">
-      {{ content }}
-    </div>
+		<header>
+			<div id="header">
+				<h1><div id="suck">SUCK</div><div id="minimally">MINIMALLY</div></h1>
+				<div id="tagline">The personal derp of herp diddly</div>
+				<ul id="navigation">
+					<li><a href="/">Home</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/who">About Me</a></li>
+				</ul>
+			</div>
+		</header>
+    {{ content }}
     <footer>
-
+			<div id="footer">
+				<p>&copy; 2012 Justin Streufert</p>
+			</div>
     </footer>
   </div> <!--! end of #container -->
 
