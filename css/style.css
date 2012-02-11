@@ -213,7 +213,7 @@ td { vertical-align: top; }
 
 
 BODY {
-	font-family: 'Lusitana', serif;
+	font-family: 'Asap', sans-serif;
 	font-size: 18px;
 	background: #eee url(/img/subtle_zebra_3d.png);
 }
@@ -223,6 +223,7 @@ A {
 }
 
 P {
+	font-family: 'Lusitana', serif;
 	line-height: 1.5em;
 }
 
@@ -240,7 +241,6 @@ P {
 	margin-left: -50px;
 	margin-right: -50px;
 	background: #eee;
-	font-family: 'Asap', sans-serif;
 	color: #666;
 }
 
@@ -317,7 +317,20 @@ H3 {
 	border-left: 1px solid #ddd;
 }
 
+.posts {
+	list-style-type: none;
+	padding: 0;
+}
 
+.posts LI {
+	display: block;
+	margin-top: 10px;
+}
+
+.posts .date {
+	font-size: 80%;
+	color: #999;
+}
 
 
 
