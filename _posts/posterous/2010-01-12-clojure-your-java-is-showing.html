@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: "Clojure: Your Java Is Showing"
+published: true
+---
+<p>Apparently the convention in Clojure is to not fix what isn't broken with the underlying Java. So for example, since Clojure strings are Java strings, Clojure doesn't provide its own function for converting a string to uppercase. Instead, you just do this:</p>
+<p><strong>(.toUpperCase "narf")</strong>&nbsp; ; =&gt; "NARF"</p>
+<p>...which is of course the equivalent of Java's:</p>
+<p><strong>"narf".toUpperCase()</strong>&nbsp; // =&gt; "NARF"</p>
+<p>This is nice and pragmatic, but it leads to an odd division of style. Code will mix calls to <strong>functions-like-this</strong> with ones to <strong>.methodsLikeThis</strong>, which is wacky-looking. Also, Java methods don't work in some places you might expect them to:</p>
+<p><strong>(map .toUpperCase ["make" "me" "shout"])</strong>&nbsp; ; Raises an exception!</p>
+<p>Instead you have to wrap the method in a Clojure function to get it to work:</p>
+<p><strong>(map (memfn toUpperCase) ["make" "me" "shout"])</strong>&nbsp; ; =&gt; ("MAKE" "ME" "SHOUT")<br /><strong>(map #(.toUpperCase %) ["make" "me" "shout"])</strong>&nbsp; ; =&gt; ("MAKE" "ME" "SHOUT")</p>
+<p>I guess every language has its compromises and warts. Now if you look at Clojure as a way to make writing Java easier, all this makes sense. But if you dislike Java for the most part (and I do) and are just trying to learn an interesting language, it becomes tempting to write lots of little wrappers for Java's native methods as a fig leaf for how tightly coupled Clojure is with its environment:</p>
+<p><strong>(defn str-upper [string] (.toUpperCase string))</strong><br /><strong>(str-upper "what")</strong>&nbsp; ; =&gt; "WHAT"<br /><strong>(map str-upper ["these" "words"])</strong>&nbsp; ; =&gt; ("THESE" "WORDS")</p>
+<p>Ahhhh...</p>
