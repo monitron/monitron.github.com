@@ -222,11 +222,6 @@ A {
 	text-decoration: none;
 }
 
-P {
-	font-family: 'Lusitana', serif;
-	line-height: 1.5em;
-}
-
 #container {
 	width: 900px;
 	margin: 0 auto;
@@ -332,12 +327,40 @@ H3 {
 	color: #999;
 }
 
+.post H3 {
+	margin-bottom: 0;
+}
 
+.post .date {
+	color: #bbb;
+}
 
+.post .body {
+	font-family: 'Lusitana', serif;
+	line-height: 1.5em;
+	margin-top: 30px;
+}
 
+.post .body LI {
+	margin-bottom: 0.5em;
+}
 
+.post .body BLOCKQUOTE {
+	background: #eee;
+	font-size: 1.1em;
+	padding: 1px 20px;
+	border-radius: 10px 0px 10px 0px;
+	border-bottom: 5px solid #bbb;
+	font-style: italic;
+}
 
+.post IMG[align="right"] {
+	margin-left: 10px;
+}
 
+.post IMG[align="left"] {
+	margin-right: 10px;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
