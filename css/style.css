@@ -285,7 +285,7 @@ H1 {
 }
 
 H3 {
-	font-size: 30px;
+	font-size: 1.6em;
 	font-family: 'Asap', sans-serif;
 }
 
@@ -361,6 +361,22 @@ H3 {
 .post IMG[align="left"] {
 	margin-right: 10px;
 }
+
+.comments {
+	background: #eee;
+	padding: 4px 20px;
+	border-top: 5px solid #bbb;
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 0.8em;
+}
+
+.comments H3 {
+	font-size: 1.5em;
+	margin: 0 0 0.6em !important;
+}
+
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
