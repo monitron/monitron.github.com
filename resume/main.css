@@ -1,0 +1,25 @@
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 3em;
+}
+
+ul.unstructured {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.unstructured li {
+  display: inline;
+}
