@@ -1,7 +1,11 @@
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-  line-height: 1.4;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
 }
 
 article {
@@ -9,12 +13,7 @@ article {
   margin: 0 auto;
 }
 
-h1 {
-  font-weight: bold;
-  margin-top: 3em;
-}
-
-ul.unstructured {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -22,4 +21,57 @@ ul.unstructured {
 
 ul.unstructured li {
   display: inline;
+}
+
+ul:not(.unstructured) li:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+article > header, h1 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+.tagline {
+  font-size: 150%;
+}
+
+h3 {
+  margin: 0;
+  font-size: 150%;
+}
+
+.position {
+  opacity: .5;
+  font-weight: 300;
+}
+
+.timing {
+  font-weight: 600;
+}
+
+.unit {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.unit header {
+  padding-right: 20px;
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+
+.unit-body {
+  border-left: 5px solid #ddd;
+  padding-left: 20px;
+  float: right;
+  width: 70%;
 }
