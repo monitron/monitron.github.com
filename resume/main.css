@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+article {
+  max-width: 840px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.unstructured li {
+  display: inline;
+}
+
+ul:not(.unstructured) li:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+h1, .introduction {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 225%;
+}
+
+h2 {
+  font-size: 150%;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-size: 150%;
+}
+
+.introduction {
+  font-size: 125%;
+  margin: 0.25em 0 1.5em 0;
+}
+
+.position {
+  opacity: .5;
+  font-weight: 300;
+}
+
+.secondary {
+  opacity: .3;
+}
+
+.timing {
+  font-weight: 600;
+}
+
+.unit {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+@media (max-width:820px) {
+  .unit {
+    border-left: 5px solid #ddd;
+    padding-left: 20px;
+  }
+
+  .unit header {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width:821px) {
+  .unit header {
+    padding-right: 20px;
+    float: left;
+    width: 30%;
+    text-align: right;
+  }
+
+  .unit-body {
+    border-left: 5px solid #ddd;
+    padding-left: 20px;
+    float: right;
+    width: 70%;
+  }
+  
+  #experience .unit-body {
+    min-height: 90px;
+  }
+
+  #patents .unit-body {
+    min-height: 70px;
+  }
+}
