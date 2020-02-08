@@ -4,6 +4,8 @@
 }
 
 body {
+  background: #fafafa;
+  color: black;
   font-family: Roboto, sans-serif;
   line-height: 1.6;
 }
