@@ -129,7 +129,8 @@ h3 {
 
 @media print {
   article {
-    width: 12000px;
+    width: 900px;
+    max-width: none;
   }
 
   h1 {
