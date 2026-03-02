@@ -79,7 +79,8 @@ h3 {
 }
 
 .unit {
-  margin-bottom: 2em;
+  display: flex;
+  margin-bottom: 1.5em;
   overflow: hidden;
 }
 
@@ -117,14 +118,6 @@ h3 {
     float: right;
     width: 73%;
   }
-
-  #experience .unit-body {
-    min-height: 90px;
-  }
-
-  #patents .unit-body {
-    min-height: 70px;
-  }
 }
 
 @media print {
@@ -143,5 +136,9 @@ h3 {
 
   .unit > header {
     break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
   }
 }
